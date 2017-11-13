@@ -1,0 +1,11 @@
+# /etc/systemd/system/currentyear.service
+[Unit]
+Description=What year is it?
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 -u /home/path/to/currentyear/currentyear.py
+StandardOutput=syslog
+StandardError=syslog
+
