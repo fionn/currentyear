@@ -1,0 +1,11 @@
+# /etc/systemd/system/currentyear.timer
+
+[Unit]
+Description=The current year, hourly
+
+[Timer]
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target
+

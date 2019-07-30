@@ -1,3 +1,6 @@
 *.swp
-secrets.py
+.env
+tags
+venv/
 __pycache__
+.mypy_cache/
